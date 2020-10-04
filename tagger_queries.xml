@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<configuration>
+
+	<Queries>
+
+        <Query category="VIP - Track Key Indicators" id_column="name" objecttype="device">
+        (select (name)(from device))
+        </Query>
+
+        <Query category="VIP - Track Key Indicators" id_column="name" objecttype="user">
+        (select (name) (from user (where user (eq type (enum domain))))
+        </Query>
+
+	</Queries>
+
+</configuration>
